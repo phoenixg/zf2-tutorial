@@ -1,7 +1,6 @@
 ZendSkeletonApplication
 =======================
 
-TO: 
+TO:
 
-https://zf2-cn.readthedocs.org/en/latest/user-guide/forms-and-actions.html
-
+https://zf2-cn.readthedocs.org/en/latest/modules/zend.config.introduction.html
