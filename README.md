@@ -11,4 +11,4 @@ https://zf2-cn.readthedocs.org/en/latest/modules/zend.config.introduction.html
 
 TO:
 
-http://www.youtube.com/watch?v=vPBsWjE50Zw&list=PLXRC3l-ZhN3qLyJG26xPpcCu3-0PhrHtI
+Router： http://www.youtube.com/watch?v=Ri-MAfid-MI&list=PLXRC3l-ZhN3qLyJG26xPpcCu3-0PhrHtI
