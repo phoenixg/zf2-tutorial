@@ -3,8 +3,7 @@
 
 TO:
 
-https://zf2-cn.readthedocs.org/en/latest/modules/zend.config.introduction.html
-
+http://framework.zend.com/manual/2.0/en/index.html#introductiontozendframework
 
 以及youtube印度人教程的项目
 ===========================
