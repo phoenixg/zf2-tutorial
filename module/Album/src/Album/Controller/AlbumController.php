@@ -1,10 +1,13 @@
 <?php
+
 namespace Album\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Album\Model\Album;
 use Album\Form\AlbumForm;
+
+
 
 class AlbumController extends AbstractActionController
 {
@@ -13,6 +16,9 @@ class AlbumController extends AbstractActionController
 
     public function indexAction()
     {
+        // my test code
+
+
         return new ViewModel(array(
             'albums' => $this->getAlbumTable()->fetchAll(),
         ));

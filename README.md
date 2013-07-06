@@ -3,7 +3,7 @@
 
 TO:
 
-http://framework.zend.com/manual/2.0/en/index.html#introductiontozendframework
+http://framework.zend.com/manual/2.2/en/index.html
 
 以及youtube印度人教程的项目
 ===========================
