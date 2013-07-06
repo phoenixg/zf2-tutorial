@@ -10,4 +10,6 @@ http://framework.zend.com/manual/2.2/en/index.html
 
 TO:
 
-Router： http://www.youtube.com/watch?v=Ri-MAfid-MI&list=PLXRC3l-ZhN3qLyJG26xPpcCu3-0PhrHtI
+tutorial 4: Service Manager
+
+http://www.youtube.com/watch?v=g2OS11SbjEI

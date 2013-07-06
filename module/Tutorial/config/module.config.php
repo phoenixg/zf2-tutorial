@@ -15,7 +15,7 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'Album\Controller\Album',
+                        'controller' => 'Tutorial\Controller\Index',
                         'action'     => 'index',
                     ),
                 ),
@@ -27,7 +27,7 @@ return array(
             'application' => array(
                 'type'    => 'Literal',
                 'options' => array(
-                    'route'    => '/application',
+                    'route'    => '/tutorial',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Tutorial\Controller',
                         'controller'    => 'Index',
@@ -47,6 +47,18 @@ return array(
                             'defaults' => array(
                             ),
                         ),
+                    ),
+                ),
+            ),
+            
+            'blogPost' => array(
+                'type' => 'Segment',
+                'options' => array(
+                    'route' => '/blog/post[/:postId]',
+                    'defaults' => array(
+                        'controller' => 'Tutorial\Controller\Blog',
+                        'action' => 'post',
+                        'postId' => 1,
                     ),
                 ),
             ),
@@ -73,7 +85,8 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Tutorial\Controller\Index' => 'Tutorial\Controller\IndexController'
+            'Tutorial\Controller\Index' => 'Tutorial\Controller\IndexController',
+            'Tutorial\Controller\Blog'  => 'Tutorial\Controller\BlogController'
         ),
     ),
     'view_manager' => array(
