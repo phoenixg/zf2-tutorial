@@ -11,13 +11,25 @@ namespace Tutorial\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Tutorial\Models;
 
 class BlogController extends AbstractActionController
 {
     public function postAction()
     {
+        //$pdm = new Models\PostDataMapper();
+        $pdm = $this->getServiceLocator()->get('PostDataMapper');
+        $pim= $this->getServiceLocator()->get('PostIdentityMap');
+        echo '<pre>';var_dump($pdm);echo '</pre>';
+        echo '<br />';
+        echo '<pre>';var_dump($pim);echo '</pre>';
+
     	$postId = $this->getEvent()->getRouteMatch()->getParam('postId');
     	var_dump($postId);// 不用var_dump，用xdebug+eclipse可以在调试窗口输出。试试看phpstorm
+
+        //$pdm->getPostById($postId);
+
+
         return new ViewModel();
     }
 }
