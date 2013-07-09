@@ -10,4 +10,4 @@ http://framework.zend.com/manual/2.2/en/index.html
 
 TO:
 
-http://www.youtube.com/watch?v=qBFW7917kbM
+Zend Framework 2.1 tutorial 6: Common View Helpers : http://www.youtube.com/watch?v=qBFW7917kbM 01:00
