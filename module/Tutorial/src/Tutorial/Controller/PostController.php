@@ -13,9 +13,9 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Tutorial\Models;
 
-class BlogController extends AbstractActionController
+class PostController extends AbstractActionController
 {
-    public function postAction()
+    public function viewAction()
     {
         //$pdm = new Models\PostDataMapper();
         $pdm = $this->getServiceLocator()->get('PostDataMapper');
@@ -29,7 +29,12 @@ class BlogController extends AbstractActionController
 
         //$pdm->getPostById($postId);
 
+        $viewObj = new ViewModel(array(
+            'title' => 'Main Content',
+            'content' => 'Actual Content'
 
-        return new ViewModel();
+        ));
+
+        return $viewObj;
     }
 }

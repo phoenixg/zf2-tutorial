@@ -54,10 +54,10 @@ return array(
             'blogPost' => array(
                 'type' => 'Segment',
                 'options' => array(
-                    'route' => '/blog/post[/:postId]',
+                    'route' => '/post/view[/:postId]',
                     'defaults' => array(
-                        'controller' => 'Tutorial\Controller\Blog',
-                        'action' => 'post',
+                        'controller' => 'Tutorial\Controller\Post',
+                        'action' => 'view',
                         'postId' => 1,
                     ),
                 ),
@@ -86,7 +86,7 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Tutorial\Controller\Index' => 'Tutorial\Controller\IndexController',
-            'Tutorial\Controller\Blog'  => 'Tutorial\Controller\BlogController'
+            'Tutorial\Controller\Post'  => 'Tutorial\Controller\PostController'
         ),
     ),
     'view_manager' => array(
