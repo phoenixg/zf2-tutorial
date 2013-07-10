@@ -32,8 +32,12 @@ class PostController extends AbstractActionController
         $viewObj = new ViewModel(array(
             'title' => 'Main Content',
             'content' => 'Actual Content'
-
         ));
+
+        $widgetObj = new ViewModel();
+        $widgetObj->setTemplate('post/widget');
+
+        $viewObj->addChild($widgetObj, 'widget');
 
         return $viewObj;
     }
