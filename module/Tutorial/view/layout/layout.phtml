@@ -7,6 +7,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <?php
+    echo $this->headScript()->appendFile('http://www.seekfortruelove.org/js/jquery-1.8.0.min.js', $type = 'text/javascript')
+                            ->appendFile('http://www.seekfortruelove.org/js/bootstrap.min.js', $type = 'text/javascript');
+    echo PHP_EOL;
+    echo $this->headLink()->appendStylesheet('http://www.seekfortruelove.org/css/bootstrap.min.css');
+    echo PHP_EOL;
+    ?>
     <title>
         Bootstrap
     </title>
@@ -21,10 +28,6 @@
     <h1>怎么说也得搞个标题才叫模版嘛</h1>
     <?php echo $this->content;?>
 </div>
-
-
-<script src="/assets/js/jquery.js"></script>
-<script src="/assets/js/bootstrap.js"></script>
 
 
 

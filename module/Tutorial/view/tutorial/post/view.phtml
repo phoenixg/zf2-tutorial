@@ -1,3 +1,5 @@
+<?php $this->headLink()->appendStylesheet($this->baseUrl.'/css/post.css');?>
+
 <div class="content">
     <div class="page-header">
         <h1>标题</h1>
@@ -7,6 +9,7 @@
         <div class="span8">
             <h2><?php echo $this->title;?></h2>
             <?php echo $this->content;?>
+            <p><a href="<?php echo $this->url('blogPost',array('action'=>'edit', 'postId'=>10));?>">click here</a></p>
         </div>
     </div>
 </div>
