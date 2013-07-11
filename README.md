@@ -11,3 +11,9 @@ http://framework.zend.com/manual/2.2/en/index.html
 TO:
 Zend Framework 2.1 tutorial 9: Unit Testing Domain Entity
 http://www.youtube.com/watch?v=mHCm52LprVg
+
+
+手册学习
+==========
+http://framework.zend.com/manual/2.2/en/tutorials/config.advanced.html
+Environment-specific application configuration
